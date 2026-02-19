@@ -1,0 +1,92 @@
+/* Core Layout Rules */
+html {
+    border-left: 5px solid lightgray;
+}
+
+body {
+    min-height: 100vh;
+    font-family: sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+header, main, footer {
+    padding: 1rem 2rem; /* 1rem top/bottom, 2rem left/right */
+}
+
+/* Typography */
+h1 {
+    color: tomato;
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+h2 {
+    font-weight: lighter;
+    margin-top: 0;
+}
+
+article h3 {
+    font-size: 2rem;
+}
+
+/* Navigation Styling */
+.nav-menu {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.main-nav {
+    justify-content: space-between;
+}
+
+.main-nav a {
+    color: lightgray;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-nav a {
+    color: tomato;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px; /* Spacing for footer links */
+}
+
+/* Images and Articles */
+img {
+    width: 100%;
+}
+
+article {
+    margin-bottom: 4rem;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 2rem;
+}
+
+article time {
+    color: lightgray;
+    font-size: 1.2rem;
+}
+
+/* Drop Cap and Links */
+article p::first-letter {
+    font-size: 4rem;
+    color: lightgray;
+    float: left;
+    line-height: 1;
+    padding-right: 10px;
+}
+
+.continue-link {
+    display: block;
+    text-align: right;
+    color: tomato;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.copyright {
+    color: lightgray;
+}
